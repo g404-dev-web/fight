@@ -69,7 +69,7 @@ class Personnage
   
   public function nom()
   {
-    return $this->_nom;
+    return $this->nom;
   }
   
   public function setDegats($degats)
@@ -96,12 +96,12 @@ class Personnage
   {
     if(is_string($nom))
     {
-      $this->_nom = $nom;
+      $this->nom = $nom;
     }
   }
   public function nomValide()
   {
-      if($this->_nom != "") {
+      if($this->nom != "") {
           return true;
       }
   }
